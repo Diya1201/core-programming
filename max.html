@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title> Max value from user input </title>
+</head>
+<body>
+	<h1> Max Value </h1>
+	<button onclick ="Max()"> click to find max value </button>
+	<script>
+	 function Max(){
+	 var i;
+	 var a = []; 
+	 var b = [];
+	 a = parseInt(prompt("Enter the numbers for array"));
+	 b = a.split(',');
+	  var max = 0;
+	  var n= b.length;
+	  for(i=0;i<n;i++)
+	   {
+		  if(b[i]>max)
+		  {
+			  max = b[i];
+		  }
+	   }
+	   //document.write(b+ '<br/>');
+	   //document.write(n+'<br/>');
+	   //document.write(b[0]+'<br/>');
+	   document.write("The max number is "+max);	 
+	    //system.out("The max number is :- ")
+	 }
+	</script>
+</body>
+</html>	
+	 
